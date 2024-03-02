@@ -1,5 +1,4 @@
-NOM : RANDRIAMISAINA
-PRENOMS : Tsiory Fanomezana
+
 
 1-
 Lancer le serveur dans le terminal
