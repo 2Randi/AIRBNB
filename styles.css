@@ -1,0 +1,380 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #b8a9a9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+
+    /**/
+}
+
+
+#authContainer {
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #423e3e4f; /* Couleur du fond */
+    border-radius: 25px; /* Coins arrondis */
+    padding: 10px; /* Espacement interne */
+    text-align: right; /* Centrer le contenu */
+    display: inline-block;
+}
+
+
+#authIcon {
+    max-width: 50px; 
+    border-radius: 5px; 
+    vertical-align: middle; 
+}
+
+#authText {
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 10px; /* Espacement entre l'icône et le texte */
+    vertical-align: middle; /* Alignement vertical au milieu */
+    text-decoration: none;
+}
+
+#upperRightLinks {
+    margin-right: 3%;
+    text-align: right;
+    margin-top: 80px;
+}
+
+
+article {
+    margin: 20px;
+    overflow: hidden;
+}
+
+#searchForm {
+    margin-left: 10%;
+    width: 45%;
+    float: left;
+}
+
+
+#maCarte {
+    margin-right: 7%;
+    width: 65%;
+    height: 400px;
+    float: right;
+}
+
+/*resultat recherche*/
+.resultCard {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    float: left;
+    box-sizing: border-box; 
+    height: 350px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    box-flex: 1;
+    flex: calc(33.33% - 20px);
+
+}
+
+
+#resultFormSection::after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+.resultFormSection {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+
+#resultFormSection article {
+    flex: 1 0 calc(33.33% - 10px); 
+    height: 400px;
+    background-color: #fff; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+
+}
+
+#searchResults {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -10px;
+    max-height: 400px;
+
+}
+
+.resultCard a {
+    color: #4281d4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.resultCard a:hover {
+    text-decoration: underline;
+}
+
+.resultCard p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* Style pour le formulaire de commentaire */
+.avis {
+    text-decoration: #333;
+    font-weight: bold;
+    text-align: left;
+} 
+
+.comment-form {
+    margin-top: 0px;
+}
+
+/* Style pour les commentaires */
+.comment-textarea {
+    width: 30%;
+    padding: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style pour le bouton Valider */
+.submit-button {
+    width: 20%;
+    background-color: #80ee84;
+    color: white;
+    padding: 4px 7px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #80ee84;
+}
+/*   */
+
+
+form {
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] div {
+    background-color: #ec5757;
+    color: red;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ec5757;
+}
+
+h1{
+    color: red;
+    text-align: center;
+}  
+
+/*authentification*/
+
+.authentification {
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9
+    
+}
+
+.authentification form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.authentification h2 {
+    text-align: center;
+    color: #333;
+}
+
+.authentification label {
+    margin-bottom: 8px;
+}
+
+.authentification input {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.authentification input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+.authentification input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.authentification p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.authentification a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.authentification a:hover {
+    text-decoration: underline;
+}
+
+
+/*authentification*/
+
+/*inscription*/
+
+.inscription {
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.inscription form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inscription h2 {
+    text-align: center;
+    color: #333;
+}
+
+.inscription label {
+    font-weight: bold;
+    
+}
+
+.inscription input {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.inscription input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+.inscription input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.inscription p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.inscription a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.inscription a:hover {
+    text-decoration: underline;
+}
+
+
+/*inscription*/
+
+/*  réservations */
+.reservation-list {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+
+}
+
+.reservation-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.reservation-item h4 {
+    color: #4caf50;
+}
+
+.reservation-item p {
+    margin: 5px 0;
+}
+
+h4 {
+    color: #333; 
+}
+
+p {
+    margin-bottom: 10px; 
+    color: #0a0101; 
+}
+
+
+/*  réservations */
+ 
+/*location */
+.location {
+    margin: 20px;
+    width: 45%;
+    float: left;
+}
+
+.form-container {
+    width: 50%; 
+    margin: left; 
+}
+
+/* Style pour les étoiles */
+.rating {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.star {
+    margin-right: 5px;
+}
+
+.star.active {
+    color: #ffcc00; /* Couleur d'étoile sélectionnée */
+}
+
+.etoile {
+    color: gold; 
+    font-size: 20px; 
+}
+
